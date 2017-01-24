@@ -8,27 +8,21 @@
     <title>Movie Tickets</title>
   </head>
   <body>
-
     <div class="container">
       <div class="row">
         <!--Header  -->
         <div class="col-md-12">
           <h1 class="text-center">The Best Movie Theatre Ever</h1>
         </div>
-
         <!--Movie1  -->
         <div class="col-md-6 left-poster">
-
           <img src="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg" alt="rogueone">
           <h2 class="text-center"> Rogue One: A Star Wars Story</h2>
           <h4>Synopsis</h4>
           <p>Former scientist Galen Erso lives on a farm with his wife and young daughter Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen is now the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, a vengeful Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance.</p>
           <h4>Times</h4>
           <p>12:00, 1:45, 3:55, 6:00, 7:45, 9:00</p>
-
-
         </div>
-
         <!--Movie2  -->
         <div class="col-md-6 right-poster">
           <img src="https://cdn.traileraddict.com/content/summit-entertainment/la-la-land-poster-4.jpg" alt="la la land">
@@ -49,7 +43,6 @@
           <h4>Times</h4>
           <p>11:00, 4:00, 8:00, 11:00</p>
         </div>
-
         <!--Movie4  -->
         <div class="col-md-6 right-poster">
           <img src="https://i.jeded.com/i/indiana-jones-and-the-temple-of-doom.13402.jpg" alt="indiana jones">
@@ -61,56 +54,59 @@
         </div>
       </div>
       <div class="row">
-        <!--User Input Form  -->
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h2 class="panel-title">Buy a ticket</h2>
-            </div>
-            <div class="panel-body">
-              <form id="userInput">
-                <p>Movie</p>
-                <select class="form-control" id="movie-title">
-                  <option>Rogue One</option>
-                  <option>La La Land</option>
-                  <option>Die Hard</option>
-                  <option>Indiana Jones</option>
-                </select>
-                <p>Age</p>
-                <select class="form-control" id="age">
-                  <option>Less than 15</option>
-                  <option>15-60</option>
-                  <option>60-75</option>
-                  <option>Older than 75</option>
-                </select>
-                <p>Time</p>
-                <select class="form-control" id="time">
-                  <option>12:00</option>
-                  <option>1:00</option>
-                  <option>4:00</option>
-                  <option>7:00</option>
-                  <option>10:00</option>
-                </select>
+        <div class="well">
+          <!--User Input Form  -->
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Buy a ticket</h2>
+              </div>
+              <div class="panel-body">
+                <form id="userInput">
+                  <p>Movie</p>
+                  <select class="form-control" id="movie-title">
+                    <option>Rogue One</option>
+                    <option>La La Land</option>
+                    <option>Die Hard</option>
+                    <option>Indiana Jones</option>
+                  </select>
+                  <p>Age</p>
+                  <select class="form-control" id="age">
+                    <option value="15">Less than 15</option>
+                    <option value="50">15-60</option>
+                    <option value="65">60-75</option>
+                    <option value="76">Older than 75</option>
+                  </select>
+                  <p>Time</p>
+                  <select class="form-control" id="time">
+                    <option>12:00</option>
+                    <option>1:00</option>
+                    <option>4:00</option>
+                    <option>7:00</option>
+                    <option>10:00</option>
+                  </select>
 
-                <button type="submit" class="btn btn-block btn-success">Purchase</button>
-
-              </form>
-
-
-
+                  <button type="submit" class="btn btn-block btn-success">Purchase</button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Price Display  -->
-        <div class="col-md-6">
-          <h2>Purchase Summary:</h2>
-        </div>
-
-
-      </div>
-    </div>
-
-
-
+          <!-- Price Display  -->
+          <div class="col-md-6">
+            <div class="panel panel-default" id="show-details">
+              <div class="panel-heading">
+                <h2 class="panel-title">Purchase Summary:</h2>
+              </div>
+              <div class="panel-body">
+                <h3 id="show-movie">Movie:</h3>
+                <p id="show-time"></p>
+                <p id="show-ticket-number"></p>
+                <h3 id="show-price"></h3>
+              </div>
+            </div>
+          </div>
+        </div> <!--End of Well -->
+      </div> <!--End of Row -->
+    </div> <!--end of container-->
   </body>
 </html>

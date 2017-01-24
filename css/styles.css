@@ -34,3 +34,7 @@ form p {
 .col-md-6 {
   border: 2px solid green;
 }
+
+#show-details {
+  color: black;
+}
