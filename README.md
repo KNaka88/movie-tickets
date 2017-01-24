@@ -13,7 +13,14 @@ Application for ordering movie tickets
 Bootstrap and Jquery files are included for additional styling and functionality.
 
 # Specs
-1. 
+1. Create html framework with 4 movies, and input panel to buy one ticket.
+  - "Star Wars", "Indiana Jones and the Temple of Doom", "La-La Land", "Die Hard I", Input panel: Movie Name, Time, Age, Price
+2. Input panel for buying more than one tickets.
+  - additional ticket button which allows for additional entry
+3. jquery for storing ticket object and displaying that ticket
+4. jquery for adding one ticket to a bill object and calculating the bill
+5. jquery for adding multiple tickets to a bill object and calculate the bill
+
 
 ### License
 
